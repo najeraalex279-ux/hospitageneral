@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital General</title>
+
+    <link rel="stylesheet" href="CSS/miEstilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="#inicio">
+            <img src="images/Logo.jpg" alt="Logo del hospital" id="logoImg">
+            <span class="fw-bold ms-2">Hospital General</span>
+        </a>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Medicos">Medicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#citas" id="btn_destacado">Agenda tu cita</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<header id="inicio">
+    <div class="container">
+        <div class="inicio-titulo">
+            <h1>Tu salud es nuestra prioridad</h1>
+            <p>
+                En Hospital General trabajamos para brindarte atención medica
+                integral, humana y de calidad, con especialistas comprometidos
+                con tu bienestar.
+            </p>
+            <a href="#Servicios" class="btn btn-primary">Conoce nuestros servicios</a>
+            <a href="#citas" class="btn btn-outline-light">Agenda tu cita</a>
+        </div>
+    </div>
+</header>
+
+<section id="Servicios" class="py-5">
+    <div class="container">
+
+        <h2 class="text-center mb-2">Nuestros servicios</h2>
+        <p class="text-center text-muted mb-5">
+            Atención y cuidado para cada etapa de tu salud.
+        </p>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta text-center p-4 h-100">
+                    <i class="bi bi-heart-pulse icono"></i>
+                    <h5>Consulta médica</h5>
+                    <p>
+                        Valoracion medica para conocer tu estado de salud
+                        y recibir orientacion sobre tu tratamiento.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta text-center p-4 h-100">
+                    <i class="bi bi-activity icono"></i>
+                    <h5>Especialidades</h5>
+                    <p>
+                        Atencion especializada para el diagnostico,
+                        seguimiento y tratamiento de diferentes padecimientos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta text-center p-4 h-100">
+                    <i class="bi bi-clipboard2-pulse icono"></i>
+                    <h5>Estudios médicos</h5>
+                    <p>
+                        Apoyo para la evaluacion de tu salud mediante
+                        estudios indicados por el personal medico.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta text-center p-4 h-100">
+                    <i class="bi bi-hospital icono"></i>
+                    <h5>Hospitalización</h5>
+                    <p>
+                        Atencion y cuidados durante tu estancia hospitalaria
+                        de acuerdo con tus necesidades.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta text-center p-4 h-100">
+                    <i class="bi bi-person-check icono"></i>
+                    <h5>Seguimiento médico</h5>
+                    <p>Control de tu evolución y orientación para continuar con los cuidados indicados por tus especialistas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta text-center p-4 h-100">
+                    <i class="bi bi-shield-plus icono"></i>
+                    <h5>Prevencion</h5>
+                    <p>Orientación para promover hábitos saludables y detectar oportunamente posibles problemas de salud.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Medicos" class="py-5">
+    <div class="container">
+
+        <h2 class="text-center mb-2">Nuestro equipo médico</h2>
+        <p class="text-center text-muted mb-5">Profesionales comprometidos con tu bienestar.</p>
+        
+        <div id="carruselMedicos" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselMedicos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Médico 1"></button>
+                <button type="button" data-bs-target="#carruselMedicos" data-bs-slide-to="1" aria-label="Médico 2"></button>
+                <button type="button" data-bs-target="#carruselMedicos" data-bs-slide-to="2" aria-label="Médico 3"></button>
+                <button type="button" data-bs-target="#carruselMedicos" data-bs-slide-to="3" aria-label="Médico 4"></button>
+                <button type="button" data-bs-target="#carruselMedicos" data-bs-slide-to="4" aria-label="Médico 5"></button>
+                <button type="button" data-bs-target="#carruselMedicos" data-bs-slide-to="5" aria-label="Médico 6"></button>
+                <button type="button" data-bs-target="#carruselMedicos" data-bs-slide-to="6" aria-label="Médico 7"></button>
+                <button type="button" data-bs-target="#carruselMedicos" data-bs-slide-to="7" aria-label="Médico 8"></button>
+                <button type="button" data-bs-target="#carruselMedicos" data-bs-slide-to="8" aria-label="Médico 9"></button>
+                <button type="button" data-bs-target="#carruselMedicos" data-bs-slide-to="9" aria-label="Médico 10"></button>
+            </div>
+
+            <div class="carousel-inner pb-5">
+                
+                <div class="carousel-item active">
+         <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+   <div class="tarjeta medico text-center h-100 mx-auto">
+     <img src="images/medico1.jpg" alt="Medico especialista" class="img-fluid">
+        <div class="p-4">
+                     <h5>Doctora Rosa mel</h5>
+                    <p class="especialidad">Médica general</p>
+    <p>Ayuda con la valoración de pacientes</p>
+            </div>
+             </div>
+            </div>
+       </div>
+                </div>
+            
+<div class="carousel-item">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="tarjeta medico text-center h-100 mx-auto">
+                <img src="images/medico2.jpg" alt="Medico especialista" class="img-fluid">
+                <div class="p-4">
+                    <h5>Doctor Ultencio</h5>
+                    <p class="especialidad">Cardiólogo</p>
+                    <p>Doctor encargado del área del corazón, apoya con análisis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <div class="carousel-item">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+            <div class="tarjeta medico text-center h-100 mx-auto">
+        <img src="images/medico3.jpg" alt="Medico especialista" class="img-fluid">
+              <div class="p-4">
+                  <h5>Doctora uróloga</h5>
+                          <p class="especialidad">Prevención de cáncer</p>
+                  <p>Antes del miedo esta priorizado tu salud.</p>
+                  </div>
+              </div>
+        </div>
+          </div>
+                </div>
+
+    <div class="carousel-item">
+       <div class="row justify-content-center">
+       <div class="col-md-6 col-lg-4">
+      <div class="tarjeta medico text-center h-100 mx-auto">
+     <img src="images/medico4.jpg" alt="Medica especialista" class="img-fluid">
+     <div class="p-4">
+    <h5>Doctor Gustabo</h5>
+     <p class="especialidad">Anatesiólogo</p>
+     <p>Doctor encargado en dormir a los pacientes</p>
+     </div>
+     </div>
+     </div>
+    </div>
+    </div>  
+
+    <div class="carousel-item">
+       <div class="row justify-content-center">
+       <div class="col-md-6 col-lg-4">
+      <div class="tarjeta medico text-center h-100 mx-auto">
+     <img src="images/medico5.jpg" alt="Medica especialista" class="img-fluid">
+     <div class="p-4">
+    <h5>Doctor Roberto</h5>
+     <p class="especialidad">Oncólogo</p>
+     <p>Revisión contra el cáncer</p>
+     </div>
+     </div>
+     </div>
+    </div>
+    </div>  
+
+    <div class="carousel-item">
+       <div class="row justify-content-center">
+       <div class="col-md-6 col-lg-4">
+      <div class="tarjeta medico text-center h-100 mx-auto">
+     <img src="images/medico6.jpg" alt="Medica especialista" class="img-fluid">
+     <div class="p-4">
+    <h5>Doctor anastasio</h5>
+     <p class="especialidad">Cirujia general</p>
+     <p>Doctor encargado en operaciones</p>
+     </div>
+     </div>
+     </div>
+    </div>
+    </div>  
+
+    <div class="carousel-item">
+       <div class="row justify-content-center">
+       <div class="col-md-6 col-lg-4">
+      <div class="tarjeta medico text-center h-100 mx-auto">
+     <img src="images/medico7.jpg" alt="Medica especialista" class="img-fluid">
+     <div class="p-4">
+    <h5>Doctor Umberto</h5>
+     <p class="especialidad">Neurólogo</p>
+     <p>Doctor encarado de la revisió del sistema nervioso</p>
+     </div>
+     </div>
+     </div>
+    </div>
+    </div>  
+
+    <div class="carousel-item">
+       <div class="row justify-content-center">
+       <div class="col-md-6 col-lg-4">
+      <div class="tarjeta medico text-center h-100 mx-auto">
+     <img src="images/medico8.jpg" alt="Medica especialista" class="img-fluid">
+     <div class="p-4">
+    <h5>Doctor Albertano</h5>
+     <p class="especialidad">Traumatólogo</p>
+     <p>Doctor que analiza los huesos</p>
+     </div>
+     </div>
+     </div>
+    </div>
+    </div>  
+
+    <div class="carousel-item">
+       <div class="row justify-content-center">
+       <div class="col-md-6 col-lg-4">
+      <div class="tarjeta medico text-center h-100 mx-auto">
+     <img src="images/medico9.jpg" alt="Medica especialista" class="img-fluid">
+     <div class="p-4">
+    <h5>Doctor Vitor</h5>
+     <p class="especialidad">Neumólogo</p>
+     <p>Doctor especialista en la revisión de enfermedades pulmonales</p>
+     </div>
+     </div>
+     </div>
+    </div>
+    </div>  
+
+<div class="carousel-item">
+       <div class="row justify-content-center">
+       <div class="col-md-6 col-lg-4">
+      <div class="tarjeta medico text-center h-100 mx-auto">
+     <img src="images/medico10.jpg" alt="Medica especialista" class="img-fluid">
+     <div class="p-4">
+    <h5>Doctora Alexa</h5>
+     <p class="especialidad">Internista</p>
+     <p>Doctora en el área de enfermedades de todo un poco </p>
+     </div>
+     </div>
+     </div>
+    </div>
+    </div>  
+            </div>
+            
+            
+<button class="carousel-control-prev" type="button" data-bs-target="#carruselMedicos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#carruselMedicos" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+</button>
+
+
+        </div>
+    </div>
+</section>
+
+<section id="nosotros" class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-4">
+
+            <div class="col-md-6">
+                <img src="images/hospital.jpg" alt="Instalaciones del hospital"
+                class="img-fluid rounded imagen-hospital">
+            </div>
+
+            <div class="col-md-6">
+                <h2>Comprometidos con tu bienestar</h2>
+                <p>
+                    En Hospital General creemos que cada persona merece una
+                    atencion digna, segura y humana. Nuestro objetivo es ofrecer
+                    servicios medicos con responsabilidad, respeto y calidad.
+                </p>
+                <p> Trabajamos en equipo para brindar una mejor experiencia a nuestros pacientes y sus familias.
+                </p>
+                <a href="#citas" class="btn btn-primary">Contactanos</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="text-center">
+    <div class="container">
+        <p>Hospital General</p>
+        <p>Atención, confianza y compromiso con tu salud.</p>
+        <p class="mb-0">&copy; 2026 Hospital General. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
